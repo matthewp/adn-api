@@ -21,7 +21,8 @@ var files = [
   "src/user_stream.js",
   "src/user.js",
   "src/post.js",
-  "src/replies.js"
+  "src/replies.js",
+  "src/hashtag.js"
 ];
 
 desc('Default, combine all files')
