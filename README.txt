@@ -16,3 +16,5 @@ var globalStream = new ADN.Global();
 globalStream.fetchNew(function(msgs) {
 	// I have msgs!
 });
+
+WARNING: This library currently doesn't use any of the migrations.
