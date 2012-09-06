@@ -1,4 +1,8 @@
-Browser-based JavaScript wrapper for the App.Net API. It provides 1 window-level namespace, ADN. To use:
+Browser-based JavaScript wrapper for the App.Net API. It provides 1 window-level namespace, ADN.
+
+To get: npm install adn-api
+
+To use:
 
 // First you need to ensure that you have authenticated.
 var MY_CLIENT_ID = 'somelongstring',
