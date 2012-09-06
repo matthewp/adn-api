@@ -7,9 +7,14 @@
     this.id = id;
     this.endpoint = new ADN.Endpoint('posts/{0}');
     this.createEndpoint = new ADN.Endpoint('posts');
+    this.annotations = [];
   }
 
   Post.prototype = Object.create(ADN.Access.prototype);
+
+  Post.prototype.addAnnotation = function(annotation) {
+    this.annotations.push(annotation);
+  };
 
   Post.prototype.deletePost = function(id, callback, errback) {
     id = id || this.id;
@@ -50,15 +55,11 @@
   };
 
   Post.sort = function(posts, eqComparer) {
-    return (posts ||[]).sort(function(a, b) {
+    return (posts || []).sort(function(a, b) {
       var date1 = Date.parse(a.created_at),
           date2 = Date.parse(b.created_at);
 
-      if(eqComparer(date1, date2)) {
-        return 1;
-      } else {
-        return -1;
-      }
+      return eqComparer(date1, date2) ? 1 : -1;
     });
   };
 

@@ -1,5 +1,7 @@
 (function() {
 
-  this.ADN = {};
+  this.ADN = {
+  	Annotations: {}
+  };
 
 }).call(this);
