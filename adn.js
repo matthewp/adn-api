@@ -1,8 +1,9 @@
-(function() {
+(function() {
 
   this.ADN = {};
 
-}).call(this);(function() {
+}).call(this);
+(function() {
   "use strict";
 
   function XhrError(message, status) {
@@ -46,7 +47,8 @@
     value: XhrError
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   /*
@@ -117,7 +119,8 @@
     value: Authenticator
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   var BASE_URL = 'https://alpha-api.app.net/stream/0/';
@@ -188,7 +191,8 @@
     value: Endpoint
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   function APIAccess() {
@@ -229,7 +233,8 @@
     value: APIAccess
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   function Stream() {
@@ -308,7 +313,8 @@
     value: Stream
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   function MainFeed() {
@@ -323,7 +329,8 @@
     value: MainFeed
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   function Mentions() {
@@ -338,7 +345,8 @@
     value: Mentions
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   function Global() {
@@ -353,7 +361,8 @@
     value: Global
   });
 
-})();(function() {
+})();
+(function() {
 	"use strict";
 
 	function UserStream(userID) {
@@ -368,7 +377,8 @@
     value: UserStream
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   var USER_URI = 'https://alpha-api.app.net/stream/0/users/';
@@ -419,7 +429,8 @@
     value: User
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   function Post(id) {
@@ -499,7 +510,8 @@
     value: Post
   });
 
-})();(function() {
+})();
+(function() {
   "use strict";
 
   function Replies(postId) {
@@ -521,7 +533,8 @@
     value: Replies
   });
 
-})();(function() {
+})();
+(function() {
 	"use strict";
 
 	function Hashtag(tag) {
