@@ -34,7 +34,13 @@
     }, errback);
   };
 
-  Post.prototype.postMessage = function(data, callback, errback) {
+  Post.prototype.postMessage = function(callback, errback) {
+    var data = {
+      text: this.text,
+      reply_to: this.replyTo
+      annotations = this.annotations
+    };
+
     var options = {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
