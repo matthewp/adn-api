@@ -1,6 +1,6 @@
 {
   "name": "adn-api",
-  "description": "Object wrapper for the App.net API.",
+  "description": "Browser-based wrapper for the App.net API.",
   "version": "1.0.0",
   "author": "Matthew Phillips <matthew@matthewphillips.info>",
   "dependencies": {
