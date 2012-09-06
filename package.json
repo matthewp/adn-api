@@ -3,6 +3,7 @@
   "description": "Browser-based wrapper for the App.net API.",
   "version": "1.0.0",
   "author": "Matthew Phillips <matthew@matthewphillips.info>",
+  "main": "adn.min.js",
   "dependencies": {
     "shelljs": ">= 0.0.6"
   }
