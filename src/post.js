@@ -37,25 +37,29 @@
   Post.prototype.postMessage = function(callback, errback) {
     var data = {
       text: this.text,
-      reply_to: this.replyTo
-      annotations = this.annotations
+      reply_to: this.replyTo,
+      annotations: this.annotations
     };
 
     var options = {
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/json'
       },
       endpoint: this.createEndpoint,
       method: 'POST',
-      data: data,
+      data: JSON.stringify(data),
       credentials: false
     };
 
     this.sendRequest(options, callback, errback);
   };
 
-  Post.prototype.retrieve = function(callback, errback) {
+  Post.prototype.retrieve = function(callback, errback, includeAnnotations) {
     this.endpoint.addUrlParameter(this.id);
+
+    if(includeAnnotations) {
+      this.endpoint.addQueryParameter('include_annotations', 1)
+    }
 
     this.sendRequest(null, callback, errback);
   };

@@ -14,7 +14,8 @@ var files = [
   "src/user.js",
   "src/post.js",
   "src/replies.js",
-  "src/hashtag.js"
+  "src/hashtag.js",
+  "src/geolocation.js"
 ];
 
 var outFile = 'adn.js';

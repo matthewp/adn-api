@@ -13,7 +13,7 @@
 	}
 
 	Object.defineProperty(ADN.Annotations, 'Geolocation', {
-		value Geolocation
+		value: Geolocation
 	});
 
 })();
