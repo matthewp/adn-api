@@ -38,7 +38,9 @@
       });
 
       self.setNewestPostId(msgs);
-      setOldest && self.setOldestPostId(msgs);
+      if(setOldest) {
+        self.setOldestPostId(msgs);
+      }
       callback(msgs);
     }, errback);
   };
