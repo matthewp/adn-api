@@ -212,7 +212,7 @@
       ADN.xhr(options, function(req) {
         if(req && req.responseText) {
           var data = JSON.parse(req.responseText);
-          callback(data);
+          callback(data.data || data);
         } else {
           callback();
         }
@@ -234,6 +234,7 @@
   });
 
 })();
+
 (function() {
   "use strict";
 
