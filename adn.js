@@ -220,7 +220,7 @@
         if(err instanceof ADN.XhrError && err.status === 401) {
           var auth = new ADN.Authenticator();
           auth.clearToken();
-          auth.authenticate();
+          window.location.reload();
         }
 
         (errback || function() { })(err);
